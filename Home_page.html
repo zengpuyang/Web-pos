@@ -9,19 +9,23 @@
 
 </head>
 <body>
-    <nav class="navbar-inverse">
+    <nav class=" navbar-inverse navbar-fixed-top">
         <div class="container">
-        <div class="container btn-group" role="group">
-            <button type="button" class="btn btn-link" id="go" onclick="">Let's Go</button>
-            <button type="button" class="btn btn-link" id="home">主页</button>
-            <button type="button" class="btn btn-link" id="items">商品列表</button>
-            <button type="button" class="btn btn-link pull-right glyphicon glyphicon-shopping-cart" id="shopping_cart">购物车(0)</button>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a id="go" >Let's Go</a></li>
+                <li class="active"><a id="home">主页</a></li>
+                <li><a id="items">商品列表</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a class="glyphicon glyphicon-shopping-cart" id="shopping_cart">购物车(0)</a></li>
+            </ul>
         </div>
         </div>
     </nav>
     <br>
-    <div></div>
-    <div class="container" id="home_page">
+    <div ></div>
+    <div class="container page-header" id="home_page">
             <div class="jumbotron">
                 <h1>Wellcome to Let's Go!</h1>
                 <p>商店里进行购物结账时会使用收银机（POS）系统，这台收银机会在结账时根据客户的购物车（Cart）中的商品（Item）和商店正在进行的优惠活动（Promotion）进行结算和打印购物清单。已知该商店正在对部分商品进行“买二赠一”的优惠活动。我们需要实现一个名为printIventory函数，该函数能够对指定格式的数据作为参数输入，然后在浏览器的控制台中输入结算清单的文本。</p>
