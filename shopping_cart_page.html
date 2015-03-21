@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" style="">
+    <title>Web——pos</title>
+
+    <link href="bin/bootstrap-3.3.2/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bin/bootstrap-3.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class=" navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a id="go" href="Product_list_page.html">Let's Go</a></li>
+                <li><a id="home" href="Home_page.html">主页</a></li>
+                <li><a id="items" href="Product_list_page.html">商品列表</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a class="glyphicon glyphicon-shopping-cart" id="shopping_cart" href="shopping_cart_page.html">购物车(0)</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container page-header" id="addtion">
+    <div class="container" id="shopping_cart_page">
+        <div class="panel panel-default page-header" >
+            <div class="panel-heading"><h3>购物清单</h3></div>
+            <div class="panel-body row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center">分类</th>
+                            <th style="text-align: center">名称</th>
+                            <th style="text-align: center">单价</th>
+                            <th style="text-align: center">单位(元)</th>
+                            <th style="text-align: center">数量</th>
+                            <th style="text-align: center">小计</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cart_item_addtion">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bin/script/jquery-1.11.1.js"></script>
+<script src="bin/script/add_item_to_cart.js"></script>
+<script src="bin/bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
